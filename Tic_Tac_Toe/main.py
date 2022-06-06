@@ -1,7 +1,9 @@
-from VS_computer import Morpion_Vs_Ordinateur
+from VS_computer import VS_Computer
+from grid import Grid
 
-grille=Morpion_Vs_Ordinateur()
+#grille=VS_Computer()
 
-print(dir(grille))
+#grille.jouer()
+
+grille=Grid()
 grille.jouer()
-

@@ -6,12 +6,6 @@ class VS_Computer(Grid):
     def __init__(self):
         super().__init__()
 
-    def lenght_max_alignment(self, x, y, pion):
-        vertical = self.nb_pions_aligned(x, y, 1, 0, pion) + self.nb_pions_aligned(x, y, -1, 0, pion)
-        diag1 = self.nb_pions_aligned(x, y, 1, 1, pion) + self.nb_pions_aligned(x, y, -1, -1, pion)
-        horizontal = self.nb_pions_aligned(x, y, 0, 1, pion) + self.nb_pions_aligned(x, y, 0, -1, pion)
-        diag2 = self.nb_pions_aligned(x, y, -1, 1, pion) + self.nb_pions_aligned(x, y, 1, -1, pion)
-        return max(vertical, diag1, horizontal, diag2)
 
     def est_fini(self, x, y, pion):
         if self.grid[x][y] == pion and self.lenght_max_alignment(x, y, pion) == self.align - 1:
@@ -26,7 +20,6 @@ class VS_Computer(Grid):
             print("Partie Nulle")
             return True
         return False
-
 
 
     def choix_coup_ordinateur(self):
