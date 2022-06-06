@@ -8,7 +8,7 @@ You can personalize the game by choosing the size of the grid you want and the l
 
 To play the original Tic Tac Toe, choose 3 for both parameters. 
 
-[My Image](Grid_4*4.png)
+[Grid Example](Grid_4*4.png)
 
 ## Player VS Player or Player VS Computer
 
