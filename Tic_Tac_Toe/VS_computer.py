@@ -1,7 +1,7 @@
 from grid import Grid
 from random import choice
 
-class Morpion_Vs_Ordinateur(Grid):
+class VS_Computer(Grid):
 
     def __init__(self):
         super().__init__()
